@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.stefanbayneweatherapp.view.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_cityDisplayModel"
+            app:destination="@id/cityDisplayModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityDisplayModel"
+        android:name="com.example.stefanbayneweatherapp.view.FragmentCityDisplayModel"
+        android:label="fragment_city_display_model"
+        tools:layout="@layout/fragment_city_display_model" >
+        <action
+            android:id="@+id/action_cityDisplayModel_to_weatherForecastPerCityModel"
+            app:destination="@id/weatherForecastPerCityModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherForecastPerCityModel"
+        android:name="com.example.stefanbayneweatherapp.view.FragmentWeatherForecastPerCityModel"
+        android:label="fragment_weather_forecast_per_city_model"
+        tools:layout="@layout/fragment_weather_forecast_per_city_model" >
+        <action
+            android:id="@+id/action_weatherForecastPerCityModel_to_mainPageFragment"
+            app:popUpTo="@id/mainPageFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">StefanBayneWeatherApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_city">Search City</string>
+    <string name="select_your_city">Select Your City:</string>
+    <string name="_80">80</string>
+    <string name="_70">70</string>
+    <string name="_60">60</string>
+    <string name="today_s_forecast_below">Today\'s Forecast Below:</string>
+    <string name="get_right_weather_app">Get Right Weather App!</string>
+    <string name="clear">Clear</string>
+    <string name="_75">75</string>
+    <string name="this_is_where_the_weather_will_show_its_temperature">This is where the weather will show its temperature</string>
+    <string name="clouds">Clouds:</string>
+    <string name="feels_like">Feels Like:</string>
+    <string name="the_temperature_for_today_is_as_follows">The Temperature for today is as follows:</string>
+    <string name="search">Search</string>
+    <array name="Temperature">
+        <item>Select Preferred Temperature</item>
+        <item>Celsius</item>
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+    </array>
+</resources>

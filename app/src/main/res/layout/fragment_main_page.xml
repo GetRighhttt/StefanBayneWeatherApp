@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.MainPageFragment"
+    android:gravity="center_horizontal"
+    android:background="@drawable/weatherappbackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/tv_home_page"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:text="@string/get_right_weather_app"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <EditText
+            android:id="@+id/et_enter_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:hint="@string/select_your_city"
+            android:fontFamily="casual"
+            android:textColorHint="#434242"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_to_lookup_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:fontFamily="casual"
+            android:text="@string/search_city"
+            android:textColor="#434242"
+            app:layout_constraintEnd_toEndOf="@id/et_enter_city"
+            app:layout_constraintStart_toStartOf="@id/et_enter_city"
+            app:layout_constraintTop_toBottomOf="@id/et_enter_city" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
