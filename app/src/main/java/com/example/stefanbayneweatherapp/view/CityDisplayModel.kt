@@ -55,21 +55,9 @@ class FragmentCityDisplayModel() : Fragment() {
             configureObserver()
         }
 
-//        binding.btnSearch.setOnClickListener{
-////            filterUsers()
-//        }
         return binding.root
     }
 
-//    private fun filterUsers() {
-//        // spinner gender or lego
-//        when(binding.spChooseTemperature.selectedItem) {
-//            "Select Preferred Temperature" -> viewModel.getWeatherData(null, null, null)
-//            "Celsius" -> viewModel.getWeatherData(null, null, "metric")
-//            "Kelvin" -> viewModel.getWeatherData(null, null, "standard")
-//            "Fahrenheit" -> viewModel.getWeatherData(null, null, "imperial")
-//        }
-//    }
 
     private fun configureObserver() {
        weatherForecastAdapter = WeatherForecastAdapter(openDetails = ::openDetails)

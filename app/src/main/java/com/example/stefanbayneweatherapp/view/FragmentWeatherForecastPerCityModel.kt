@@ -22,7 +22,6 @@ class FragmentWeatherForecastPerCityModel : Fragment() {
 
     private var _binding: FragmentWeatherForecastPerCityModelBinding? = null
     private val binding: FragmentWeatherForecastPerCityModelBinding get() = _binding!!
-    lateinit var weatherForecastAdapter: WeatherForecastAdapter
 
     companion object {
         const val KEY = "WeatherForecastDisplay"
@@ -60,15 +59,6 @@ class FragmentWeatherForecastPerCityModel : Fragment() {
             tvDescriptionDisplay.text = listForWeather.weather[0].description.toString()
         }
 
-//        val y: Double? = null
-        binding.btnSearch.setOnClickListener {
-            val spinnerTest = binding.spChooseTemperature.selectedItem.toString()
-            when(spinnerTest) {
-                "Kelvin" -> binding.tvTemperatureDisplay.text = convertMeasurements().absoluteValue.toString()
-                "Fahrenheit" -> binding.tvTemperatureDisplay.text = convertMeasurements().absoluteValue.toString()
-                else -> binding.tvTemperatureDisplay.text
-            }
-        }
         return binding.root
     }
 

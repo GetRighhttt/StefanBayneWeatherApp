@@ -23,9 +23,6 @@ class WeatherViewModel (
     private val repositoryImpl: WeatherDataRepositoryImpl
     ): ViewModel() {
 
-//    init {
-//        getWeatherData(null, null, null)
-//    }
 
     private val _weatherData = MutableLiveData<DataResponse>()
 
